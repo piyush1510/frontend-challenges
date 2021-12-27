@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Red Hat Display", sans-serif;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  background-image: url("pattern-background-desktop.svg");
+  background-size: 160%;
+  background-repeat: no-repeat;
+  background-color: hsl(225, 100%, 94%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card {
+  position: relative;
+  box-shadow: 0px 10px 20px hsl(245, 75%, 52%, 0.2);
+  background-color: white;
+  width: 300px;
+  border-radius: 20px;
+  padding: 0px 20px 50px 20px;
+}
+.card > * {
+  margin: 15px 0 15px 0;
+}
+.hero {
+  margin: 0 -20px 10px -20px;
+  width: 300px;
+  border-radius: 20px 20px 0 0;
+}
+.card > h2 {
+  text-align: center;
+  color: hsl(223, 47%, 23%);
+  font-size: 16px;
+  font-weight: 900;
+}
+.card > p {
+  text-align: center;
+  color: hsl(224, 23%, 55%);
+  font-size: 12px;
+}
+.plan {
+  position: relative;
+  width: 100%;
+  padding: 10px;
+  background-color: hsl(225, 100%, 98%);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+}
+.plan>img{
+    width: 40px;
+}
+.plan-together {
+    font-size: 12px;
+  margin-left: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  color: hsl(223, 47%, 23%);
+  font-weight: 900;
+}
+.plan-together > span {
+  color: hsl(224, 23%, 55%);
+  font-weight: 500;
+  
+}
+.plan > a {
+    font-size: 12px;
+  color: hsl(245, 75%, 52%);
+  font-weight: 900;
+  position: absolute;
+  right: 20px;
+}
+.plan > a:hover {
+  text-decoration: none;
+}
+button {
+}
+button:hover {
+}
+.pay {
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  background-color: hsl(245, 75%, 52%);
+  color: hsl(225, 100%, 98%);
+  box-shadow: 0px 10px 10px hsl(245, 75%, 52%, 0.3);
+}
+.pay:hover {
+  outline: none;
+  background-color: hsl(245, 100%, 63%);
+}
+.cancel {
+    font-size: 12px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  margin: auto;
+  bottom: 0;
+  margin-bottom: 20px;
+  color: hsl(223, 47%, 23%);
+  font-weight: 700;
+  text-decoration: none;
+}
+.cancel:hover {
+  color: black;
+}
+@media only screen and (max-width: 375px) {
+  body {
+    background-image: url("pattern-background-mobile.svg");
+    background-size: 200%;
+  }
+}
